@@ -10,9 +10,7 @@ const Home = () => {
     // callback function to call when event triggers
     const onPageLoad = () => {
       // do something else
-      setTimeout(() => {
-        setShowModal(true);
-      }, 2000);
+      setShowModal(true);
     };
 
     // Check if the page has already loaded

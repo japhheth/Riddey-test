@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 import FeatureItem from "./FeatureItem";
 import { IFeatures } from "../../../../types/features";
 import {
-  FeaturesInnerWrapper,
+  FeatureWrapper,
   FeaturesWrapper,
   UsageHeader,
   UsageProgressText,
   FeatureButtonWrapper,
+  FeatureProgressWrapper,
 } from "./styles";
 import ProgressBar from "../../../../components/ProgressBar";
 import Button from "../../../../components/Button";
@@ -28,16 +29,19 @@ const Features = () => {
 
   return (
     <FeaturesWrapper>
-      <FeaturesInnerWrapper>
+      <FeatureWrapper>
         {features.map((item: IFeatures) => (
           <FeatureItem feature={item} key={item.header} />
         ))}
+      </FeatureWrapper>
+      <FeatureProgressWrapper>
         <UsageHeader>Current usage</UsageHeader>
         <UsageProgressText>
           {progress} out of {limit} boards in use
         </UsageProgressText>
         <ProgressBar progress={progress} maxLimit={limit} />
-      </FeaturesInnerWrapper>
+      </FeatureProgressWrapper>
+
       <FeatureButtonWrapper>
         <Button handleClick={setProgressHandler} shouldDisable={isEqual}>
           Add New Board

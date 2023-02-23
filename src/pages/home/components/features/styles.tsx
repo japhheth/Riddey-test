@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-export const FeaturesInnerWrapper = styled.ul`
+export const FeatureWrapper = styled.ul`
+  width: 65%;
+  margin: 0 auto;
+`;
+
+export const FeatureProgressWrapper = styled.section`
   width: 65%;
   margin: 0 auto;
 `;
