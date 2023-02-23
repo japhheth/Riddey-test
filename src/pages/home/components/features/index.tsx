@@ -23,7 +23,7 @@ const Features = () => {
   };
 
   useEffect(() => {
-    progress === limit ? setIsEqual(true) : setIsEqual(false);
+    progress >= limit ? setIsEqual(true) : setIsEqual(false);
   }, [progress]);
 
   return (

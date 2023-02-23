@@ -8,11 +8,14 @@ export const getProgressInPercentage = (progress: number, limit: number) => {
   )
     return;
 
-  if (progress === 0) {
-    return `${progressInPercentage}`;
-  }
+  if (limit > 0) {
+    // Check if progress is greater than limit or percentage is 0
+    if (progress === 0 || progress > limit) {
+      return progressInPercentage;
+    }
 
-  progressInPercentage = (progress / limit) * 100;
+    progressInPercentage = (progress / limit) * 100;
+  }
 
   return `${progressInPercentage}%`;
 };
