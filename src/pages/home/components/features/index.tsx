@@ -11,7 +11,7 @@ import {
 } from "./styles";
 import ProgressBar from "../../../../components/ProgressBar";
 import Button from "../../../../components/Button";
-import { FEATURES } from "../../../../utils/constant";
+import { FEATURES } from "../../../../utils/constants";
 
 const Features = () => {
   const [progress, setProgress] = useState<number>(0);

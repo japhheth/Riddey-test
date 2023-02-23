@@ -14,3 +14,7 @@ export const FEATURES: IFeatures[] = [
     text: "- Etiam convallis, nibh vitae dui risus",
   },
 ];
+
+export const LOAD = "load";
+
+export const COMPLETE = "complete";
