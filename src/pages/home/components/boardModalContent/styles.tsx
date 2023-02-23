@@ -20,7 +20,6 @@ export const BoadHeader = styled.h3`
   line-height: 24px;
   margin-block-end: 0 !important;
   color: ${({ theme }) => theme.colors.primary.grey4};
-  margin-bottom: 0.5rem;
 `;
 
 export const BoardSubText = styled.p`
@@ -28,4 +27,5 @@ export const BoardSubText = styled.p`
   font-size: 14px;
   line-height: 22px;
   color: ${({ theme }) => theme.colors.primary.grey3};
+  margin-top: 0.5rem;
 `;

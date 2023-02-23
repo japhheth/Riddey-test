@@ -25,7 +25,7 @@ const Features = () => {
 
   useEffect(() => {
     progress >= limit ? setIsEqual(true) : setIsEqual(false);
-  }, [progress]);
+  }, [progress, limit]);
 
   return (
     <FeaturesWrapper>
