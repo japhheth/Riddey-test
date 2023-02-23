@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && surge ./build/ riddey-test.surge.sh"
+    "deploy": "yarn build && surge ./build/ japheth-onyenuwe-riddey-test.surge.sh"
   },
   "eslintConfig": {
     "extends": [
